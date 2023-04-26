@@ -1,0 +1,312 @@
+PROXY VAR ATTENUATION BIAS
+
+
+B0=y-B1^x, B1=Cov(xi,yi)/Var(xi), r=Cov(xi,yi)/sd(xi)*sd(yi)
+sum of OLS residuals=0 Ei ui=0, sample covariance bw x and u =0 Eixiui^=0
+point x,y means always on the OLS regression line
+
+
+
+SST=SSE+SSR
+R^2 = SSE/SST 
+R^2= 1-(SSR/SST)
+
+X * c OLS slope estimate 1/c
+Y * c OLS slope and intercept * c
+
+R2 does not change when we change the units of measurement
+
+Variance of random var X is given by E((X-u)^2) where u=E(X)
+
+o^2 = 1/(n-2) Ei ui^2 = SSR/(n-2)
+
+E (u | x1, x2 ) = 0
+
+variables can be correlated but not functionally related
+
+age = β0 + β1exper + β2exper2 + u
+Partial effect of exper: β1 + 2β2exper
+
+y = β0 + β1x1 + β2x2 +.... + βk xk + u 
+k independent variables plus intercept
+k + 1 (unknown) population parameters
+almost always will be u.
+
+β1 = ˆβ1 +  ̃δ12 ˆβ2
+  ̃δ12 is the regression coefficient from regression of x2 on x1
+
+Including Irrelevant Variables - You added variable that has a zero population coefficient.
+Omitting Relevant Variables-You left out a variable that has a non-zero population coefficient
+
+Long: y = β0 + β1x1 + β2x2 + u
+Short: y = β0 + β1x1 + uS
+E (uL | x1, x2 ) = 0 : ZCM
+ZCM is also valid for Short since β2 = 0 implies uS = uL
+V (  ̃β1 ) < V ( ˆβ1 )
+
+Two cases ommited variable bias=0:
+β2 = 0,
+ ̃δ = 0, ie: x1 and x2 are uncorrelated
+
+Corr(x1, x2 ) > 0 Corr(x1, x2 ) < 0
+β2 > 0 positive bias negative bias
+β2 < 0 negative bias positive bias
+
+
+
+
+
+
+V ( ˆβ) = σ2 (X’ X )^-1
+Diagonals are variances of ˆβj
+Off diagonals are covariances ˆβj and ˆβl
+
+σ2 = 1/(n-k-1) Ei u^ i^2
+Df = number of obs – number est params
+Df = n – (k+1) = n-k-1
+
+SE (Bj) = sqrroot(var(Bj))
+Var = (Ei (xi-x)^2) / (n-1)
+
+MLRM – needed for partial effects. Linear in B – could be nonlinear in variable (log). R^2 goodness-of-fit tells us % variation explained by all regressors
+
+MLRM1-4 – OLS unbiased
+MLRM 1-5 interpretable formula & variance estimation
+MLRM1-5 OLS is BLUE
+
+u ~ Normal (0, σ2 ) implies 4 ZCM & 5 homoskedasticity
+
+CLM: y|x ~ Normal (β0 + β1x1 + .... + βk xk, o^2) 
+βj ~ Normal (βj , Var ( ˆβj ))
+
+Var ( ˆβj ) = σ2 / (SSTj (1-Rj^2)
+
+( Bj^ - Bj ) / sd(B^j) ~Normal (0,1)
+( Bj^ - Bj ) / se(B^j)~ tn-k-1
+
+ null hypothesis: H0: Bj=0
+β2 > 0 then experience has a positive (partial) effect on wages
+t(Bj) = B^j / s.e.(B^j)
+Type I error - reject a true null
+Power-chance of rejecting H0 when false
+P(tˆβj> cα | H0 ) = α
+Two sided: H0 : βj = 0, H1 : βj  =/= 0
+H0: Bj=1. t=(Bj^-a)/s.e.(B^j)
+Single linear combination params:
+H0: B1=B2, H1: B1 =/= B2
+t=(B^1-B^2)/s.e.(B^1-B^2)
+se(B^1-B^2) does not = se(B^1)-se(B^2)
+
+95% of the possible random samples have would have βj within [_βj , βj_]
+CI test: H0 : βj = a ,HA:βj=/= a, .05→.025 
+[Bj-s.e.(Bj)tn-k-1,.025, Bj+se(Bj)tn-k-1,.25
+
+
+F test:
+F = (SSRr -SSRur)/q  / SSRur/n-k-1) ~ Fq,n-k-1, dfr-dfur and dfur =n-k-1
+H0 rejected, xk-1+1..xk jointly statistically significant, HA insignificant
+F = (R^2ur-R^2r)/q / (1-R^2ur)/(n-k-1)
+H0:B1=1,B2=0 two restrictions
+Consistency =/= unbiasedness
+For OLS under MLRM1-4 OLS is unbiased
+Consistency requires the variance to decrease with n
+
+Under the Gauss-Markov assumptions 1-5:
+(i) ˆβj is asymptotically normally distributed,
+(ii) ˆσ2 is a consistent estimator of σ2 = Var (u)
+(iii) For each j: (βj^-Bj)/se(B^j) ~Normal(0,1) where se(B^j) OLS se
+se(B^j) ~ O(1/sqrroot(n)), se(Bj,n2)/se(Bj,n1) ~= sqrroot(n1/n2)
+Under Gauss-Markov assumptions MLRM1-5,
+the OLS estimators have the smallest asymptotic variance among
+the set of consistent estimators
+
+Quadratics:
+y = β0 + β1x1 + β2x21 + β3x2 + ....+u
+Partial effect x1 is B1+2B2x1
+Case 1: ˆβ1 > 0 and ˆβ2 < 0 
+Turning point highest, effect neg B1^+2B^2x1=0, value x1 is x1*=-B^1/2B^2 > 0 which pos since B^2 < 0
+Case 2: ˆβ1 < 0 and ˆβ2 > 0, turning point lowest, positive B1+2B2x1=0, x1*=-B^1/2B^2 positive since B1^ < 0
+
+Case 3: ˆβ1 > 0 and ˆβ2 > 0, flat spot exponential (negative since) x1* = -B^1/2B^2 < 0, turning point doesn’t exist
+
+Standard error quadratic
+V ( ˆβ1 + 2 ˆβ2x1 ) = V ( ˆβ1 ) + 4x2
+1 V ( ˆβ2 ) + 4x1Cov ( ˆβ1, ˆβ2 )
+
+ partial effect of bdrms on price:
+ChangePrice=(B2+B3sqrft)Changebdrms
+Partial effect sqrft on price:
+ChangePrice=(B1+B3bdrms)ChangeSqrf
+we do not also include a dummy variable, say called male, which is
+1 for males and 0 for females. There are only 2 groups, and we only need
+2 different intercepts (so in addition to β0 we only need one dummy
+variable).
+Including both female and male (and having an intercept) would lead to
+MLRM3 being violated
+female + male = 1
+
+
+PROGRAM EVALUATION EXAMPLE:
+Estimate the e§ect of an economic or social program on individuals,firms, cities etc.
+Simplest case, there are 2 groups of subjects;
+control group does not participate in the program while the
+treatment group does participate - and we compare the outcomes for
+the 2 groups
+Create a dummy for treatment di - if di is random then regress
+yi=a+Bdi+ui gives average treatment effect
+
+As an example I could interact, nonwhite with female as follows: generate float femnon = female*nonwhite
+
+GENDER ON WAGES DUMMY DIFF IN SLOPES:
+Suppose we want to test whether the return to education is the same
+for men and women, after allowing for a constant (or intercept)
+difference. For simplicity, include only gender and education in the
+wage model:
+wage = (β0 + δ0 female) + (β1 + δ1 female) educ + u
+set female = 0 and we Önd the intercept for males is β0, and the slope
+on education for males is β1.
+set female = 1 and we find the intercept for females is β0 + δ0, and
+the slope on education for females is β1 + δ1;
+δ0 measures the difference in intercepts for men and women, and δ1
+measures the di§erences in returns to education for men and women
+
+To estimate the model we would run OLS on the following equation:
+log(wage) = β0 + δ0 female + β1 educ + δ1 female.educ + u
+where female . educ is the interaction term obtained by simply
+multiplying female and educ together
+
+wage example,
+wage = β0 + β1educ + β2exper + u
+and the two groups are Males and Females. In this model we are
+assuming that there is no difference between the model for females
+and males
+We can test whether this is valid by estimating,
+wage = β0 + β1educ + β2exper+δ0female + δ1female*educ + δ2female*exper + u
+and testing the hypothesis that
+H0 : δ0 = 0, δ1 = 0, δ2 = 0
+against the alternative that one of the coefficients is zero
+Just do an F test ñ sometimes called a Chow test
+
+Then for t-tests you just proceed as usual but instead use the robust
+standard errors
+For tests involving more than one coe¢ cient one needs the full robust
+variance covariance matrix which in matrix notation looks like,
+(X'X)^-1 X'SX(X'X)^-1 where S is a matrix that is zero everywhere except that the diagonals
+are ˆui2
+t=estimate-hypothesized value ) / robust se
+
+Heteroskedasticity makes usual standard errors invalid
+OLS is not biased as a result of hetero It may be ine¢ cient but improving efficiency is hard
+Homoskedastic regression means use standardized residuals at 95% (-2,2)
+If E (xu) 6 = 0 then ZCM violatedand we have an endogenous regressor or and endogeneity problem
+
+NEED TO KNOW: PROXY VARIABLE SOLUTION 
+
+Note that the Proxy solution is used when we are interested in the
+effect of a variable (educ) while using a proxy for a di§erent variable
+that we wanted to control for (ability) but for which we did not have
+a proper measure
+Fundamentally di§erent from Errors in Variables 
+
+DEPENDENT VARIABLE:
+Suppose that we would actually like to run,
+y*= β0+β1x1+u but instead of y* we have its noisy measure y=y*+e, e measurement error
+relationship between y and x is y=B0+B1x1+u+e
+This will be a valid regression if ZCM is satisÖed which requires x1 be
+uncorrelated with both u and e
+As long as the measurement error is not correlated with the regressor
+we are in good shape
+Note that variance of the actual residual will be larger than in the
+ideal regression,
+Var (u + e) = Var (u) + Var (e)
+assuming no covariance between u and e
+
+EXPLANATORY VARIABLE:
+Nopw suppose that the regressor (or independent variable) is mismeasured
+Ideal regression, y = β0 + β1x*+u, but we see x1=x1*+e
+Classic EIV assumption is that e is uncorrelated with xi*
+Observed regression,
+y = β0 + β1x1 + (u -B1e) Get violation of ZCM since x1 is correlated with actual residual:
+u=B1e because x1 is correlated with e
+
+ ATTENUATION BIAS NEED TO KNOW
+
+Summary: Check your data for outliers ñ could indicate a problem in the data
+Proxies for unobserved variables
+Classical EIV and attenuation bias
+
+REGRESS W TIME SERIES DATA:
+random variable indexed by time is known as a stochastic process or time series process
+STATIC MODELS:
+Suppose we have time series data on 2 variables, say y and z, where
+yt and zt correspond to the same time period
+(i.e. they are contemporaneous).
+A static model relating y to z is:
+yt = β0 + β1 zt + ut , t=1,2,..n
+a change in z at time t has an immediate effect on y
+EXAMPLE TIME SERIES:
+Explaining the Murder Rate.
+mrdrtet = β0 + β1convrtet + β2unempt + β3yngmlet + ut (3)
+where mrdrtet is the no. of murders per 10,000 people during year t,
+convrtet is the murder conviction rate,
+unempt is the unemployment rate and
+yngmlet is the fraction of the population who are males aged 18-25 years
+= can include many independent variables
+
+EXAMPLE TIME SERIES: Static Phillips Curve.
+int = β0 + β1unempt + ut (3)
+where int is the ináation rate
+unempt is the unemployment rate
+People used to think there was a tradeoff between inflation and
+unemployment
+Then the 70's happened and thought changed - macroeconomics changed
+
+Finite Distributed Lag (FDL) Models FDL models allow one or more explanatory variables to a§ect y with a lag
+Example:
+gfrt = α0 + δ0 pet + δ1 pe(t-1) +..t-2+ut where gfrt is the general fertility rate (children born per 1000 women) and pet is the real value of the personal income tax exemption (per child) at time period t
+
+this model recognises that the decision to have children may not
+immediately change when pet changes (but there may be a lagged
+response)
+
+To interpret the ceteris paribus e§ect of z on y , define 2 multipliers:
+1) The impact propensity or impact multiplier is given by δ0
+( immediate impact of a one-unit increase in z at time t on y )
+2) The long-run propensity (LRP) or long-run multiplier\ is given by
+δ0 + δ1 + δ2
+(long-run change in y due to a permanent one-unit increase in z
+ 
+Often there is substantial correlation in z at different lags, and due to
+multicollinearity (revealed by large standard errors), it can be
+diffcult to get precise estimates of the individual δj . However, often
+we still get good estimates of the LRP.
+
+Note: we can add more than one explanatory variable with lags, or
+additional contemporaneous variables, to the FDL model
+
+ZCM critical assumption:
+The error at every time t is uncorrelated with each explanatory
+variable in every time period
+If there is feedback from y into future x then this will be violated
+
+In cross-sectional analysis, we require ut to be uncorrelated with the
+explanatory variables also dated at time t. This condition is equivalent to
+E (ut jxt1, xt2, .., xtk ) = E (ut jxt ) = 0 
+When condition (10) is true in time series data, we say that the xtj
+are contemporaneously exogenous (i.e. the ut and xtj are
+contemporaneously uncorrelated
+
+Corr(ut,xsj)=0 even when s=/=t
+When condition (9) is satisfed, the explanatory variables are strictly
+exogenous, We need this stronger assumption for OLS to be unbiased
+
+SERIAL CORRELATION
+the violation of TS.5 means the errors term have serial correlation or
+autocorrelation
+eg: if interest rate is unexpectedly high in one period (ut > 0), it
+could be unexpectedly large in the next period (ut +1 > 0) and hence
+Corr (ut , ut +1 ) > 0
+Note this condition says nothing about the correlation among the
+independent variables
+
+
