@@ -1,0 +1,14 @@
+V ( ˆβ) = σ2 (X’ X )^-1
+Diagonals are variances of ˆβj
+Off diagonals are covariances ˆβj and ˆβl
+σ2 = 1/(n-k-1) Ei u^ i^2
+Df = number of obs – number est params
+Df = n – (k+1) = n-k-1
+SE (Bj) = sqrroot(var(Bj))
+Var = (Ei (xi-x)^2) / (n-1)
+MLRM – needed for partial effects. Linear in B – could be nonlinear in variable (log). R^2 goodness-of-fit tells us % variation explained by all regressors
+MLRM1-4 – OLS unbiased
+MLRM 1-5 interpretable formula & variance estimation
+MLRM1-5 OLS is BLUE
+
+

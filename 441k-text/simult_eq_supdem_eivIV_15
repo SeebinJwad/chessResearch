@@ -1,0 +1,26 @@
+Simultan causation model (SEM):
+demand: qd = y1 * p+B1 * zd + ud
+supply: qd = y2 * p+B2 * zs + us
+equilibrium cond: qd = qs = q
+zd zs demand and supply shifters, exogenous vars
+reach equil as p adjusts in response to zd and zs and unobs shifters/shocks
+"structural eqs" - structural paramaters include supp and dem elasticities related to yj
+if q and p are in terms of log of quantity and price then yj are elasticities
+ceteris paribus interp for yj
+
+ols biased and incons for both eqs, need a z var corr w p not u
+for demand eq that is zs for obs supply shifter vice versa
+
+EIV: Error in vars
+classical EIV lead to attenuation bias
+y = b0+b1x* + u
+x = x*+e
+EIV IV SOLN:
+Propose x2 as an instrument for x1:
+y=B0+B1x1+u-B1e1
+we need: x1 x2 corr w eachother, x2 uncorr w u-B1e1 and e1 e2 uncorr
+Then, cov(x1,x2) = var(x*) > 0 and cov(x2,e1) = 0
+
+
+
+

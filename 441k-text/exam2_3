@@ -1,0 +1,54 @@
+Test the null hypothesis that the return to experience is 10% against the one sided
+alternative that the return to education is less than 10%.
+t=(0.0663221-0.1)/0.0053094=-6.34<-t(1253) 0.05=-1.645
+So we reject the null hypothesis in favor of the alternative
+
+Find a 90% confidence interval for the coefficient on female.
+b – s.e.(b).t(1253) 0.05 < b0 < b – s.e.(b).t(1253) 0.05 - 2 points for this
+-0.4532832 – 0.029217(1.645) < b0 <-0.4532832 + 0.029217(1.645) (full credit if all pieces there
+-0.5013765 < b0 < -0.40519 (full credit also
+
+What is the estimated partial effect of experience at 10 years of experience?
+Bexper+2Bexpersq (exper) - 2 points for formula
+0.0408305 +2(-0.0006301)(10) (full credit)
+0.0282293
+
+What additional piece of information would you need to be able to determine the
+standard error of the estimated partial effect in 3?
+Need the estimated covariance between the exper and expersq coefficients
+
+At what level of experience will the return to experience be equal to zero? Is this
+level practically relevant?
+Exper * = -b exper/(2*b expersq ) - 2 points for formula
+Exper * = -0.0408305/(2*(-0.0006301)) – 3 points
+Exper * = -32.404
+It is practically relevant since the largest value for experience is 48 years. 4 points if number if
+correct and they made this conclusion.
+
+Find the exact percentage difference in wages for females compared to males (with
+males as the base group). Compare this to the approximation based on the coefficient multiplied
+by 100.
+100(exp(-0.4532832)-1) = -36.44% (2 points)
+Approximation is 100*(0.4532832) = -45% (1 point)
+Approximation is off by 9% (1 point
+
+What is the interpretation of the coefficients on belavg and abvavg (recall how these
+variables are defined)? (One sentence for each coefficient.)
+Holding fixed gender, experience and education people with below average looks earn 15% less
+than people with average looks (take off 1 point if did not say ``holding fixed...’’)
+Holding fixed gender, experience and education people with above average looks earn 0.6% less
+than people with average looks (take off 1 point if did not say ``holding fixed...’’)
+
+Are the beauty variables individually significant using a 5% level test?
+Belavg is significant at 5% level since p value 0.000
+Abvavg is not significant at 5% level since p value is 0.82
+
+How confident are you that the true coefficient on belavg is at least -0.2372479?
+90% - (-.2372479, infinity) is the 90% one sided confidence interval
+
+Suppose I had created the dummy variable avg=1-belavg-abvavg and used avg
+instead of belavg. Find the new coefficients in this form of the regression.
+New intercept = 0.558981 -0.1542 ( 1 point) (sub cons_ - belavg coeff)
+Coeff on avg = 0.1542 (1 point) (belavg)
+Coeff on abvavg = -0.0066465 – (-0.1542032) (1 point) (abvavg - belavg)
+Other coefficients will be the same (2points)

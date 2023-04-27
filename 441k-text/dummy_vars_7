@@ -1,0 +1,26 @@
+
+PROGRAM EVALUATION EXAMPLE:
+Estimate the e§ect of an economic or social program on individuals,firms, cities etc.
+Simplest case, there are 2 groups of subjects;
+control group does not participate in the program while the
+treatment group does participate - and we compare the outcomes for
+the 2 groups
+Create a dummy for treatment di - if di is random then regress
+yi=a+Bdi+ui gives average treatment effect
+
+As an example I could interact, nonwhite with female as follows: generate float femnon = female*nonwhite
+
+GENDER ON WAGES DUMMY DIFF IN SLOPES:
+Suppose we want to test whether the return to education is the same
+for men and women, after allowing for a constant (or intercept)
+difference. For simplicity, include only gender and education in the
+wage model:
+wage = (β0 + δ0 female) + (β1 + δ1 female) educ + u
+set female = 0 and we Önd the intercept for males is β0, and the slope
+on education for males is β1.
+set female = 1 and we find the intercept for females is β0 + δ0, and
+the slope on education for females is β1 + δ1;
+δ0 measures the difference in intercepts for men and women, and δ1
+measures the di§erences in returns to education for men and women
+
+

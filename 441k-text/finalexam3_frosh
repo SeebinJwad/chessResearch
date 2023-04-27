@@ -1,0 +1,58 @@
+priGPA prior GPA (in semesters prior to this course)
+ACT performance on the ACT exam (taken in high school)
+frosh 1 if student is a freshman, 0 otherwise
+soph 1 if student is a sophomore, 0 otherwise
+
+Explain in words what the soph coefficient estimate means.
+The expected final score for sophomores, holding priGPA and ACT fixed, is 0.73 points lower
+than upper-classmen (i.e., those that are not freshmen and not sophomore)
+
+Explain how you would test whether there is any effect of class (that is, freshman
+vs sophomore vs others) in this regression. Be specific about the null hypothesis of interest
+and the “restricted” regression that would be needed for the hypothesis test.
+The null hypothesis is H0: Bfrosh = Bsoph = 0. To do the partial F-test, we would do a
+“restricted” regression by dropping frosh and soph
+
+Your classmate suggests that prior GPA is probably less important for freshmen as
+a predictor of final exam performance (since prior GPA is based upon a single semester for
+freshmen). What variable would you add to the model to allow for this possibility? And
+what sign would you expect for this variable’s coefficient estimate if your classmate is
+correct?
+The interaction priGPA*frosh allows the affect of priGPA (on final) to vary for freshmen and
+non-freshmen. If the effect of priGPA is lower for freshmen, this would be picked up by a
+negative estimate on the interaction variable
+
+What is the predicted difference in final-exam performance between freshmen and
+non-freshmen at given values of priGPA = 3.5 and ACT = 30?
+The estimated expected difference would be 7.034 – 1.681 (3.5) – 0.122 (30).
+Coeff frosh + coeff frosh gpa * 3.5 + froshACT * 30
+
+For non-freshmen, what is the expected effect of a 0.1 point increase in priGPA
+and a 1 point increase in ACT upon final exam performance?
+The effect for non-freshmen would be 0.1*(2.7557) + 1.0*(0.3762) = 0.6518.
+
+For non-freshmen, what is the expected effect of a 0.1 point increase in priGPA
+and a 1 point increase in ACT upon final exam performance?
+The effect for non-freshmen would be 0.1*(2.7557) + 1.0*(0.3762) = 0.6518.
+.1*priGPA coeff + 1.0 *ACT coeff
+
+Suppose you want to test whether or not a 0.1 point increase in priGPA has the
+same expected effect (on final) as a 1 point increase in ACT for non-freshmen. State the
+appropriate null hypothesis, and state the number of restrictions (“q”) in the null hypothesis.
+The null hypothesis is H0: 0.1BpriGPA = BACT. There is a single restriction (q=1) in the null
+hypothesis (even though two parameters appear).
+
+Which of the two following regressions would have a larger R-squared:
+a. final on priGPA, ACT, GPAsq
+b. final on priGPA, ACT, ACTsq
+Briefly explain your answer.
+a. Since GPAsq is more significant (higher t-stat in magnitude) than ACTsq in the
+regression, we know that the R-squared will go down more if GPAsq is dropped. (We know
+this because the F-stat, which is equal to the t-stat squared, is bigger.)
+
+What is the estimated effect of ACT on expected final exam performance when
+ACT = 20 and priGPA = 3.0?
+The estimated effect of a one-point increase in ACT on expected final exam performance is
+-0.5707+2*0.0196*20, or about 0.2133. (Note that GPA does not matter here.)
+ACT coeff + 2*Actsq *20 
+

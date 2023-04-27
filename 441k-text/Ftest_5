@@ -1,0 +1,22 @@
+F test:
+F = (SSRr -SSRur)/q  / SSRur/n-k-1) ~ Fq,n-k-1, dfr-dfur and dfur =n-k-1
+H0 rejected, xk-1+1..xk jointly statistically significant, HA insignificant
+F = (R^2ur-R^2r)/q / (1-R^2ur)/(n-k-1)
+H0:B1=1,B2=0 two restrictions
+Consistency =/= unbiasedness
+For OLS under MLRM1-4 OLS is unbiased
+Consistency requires the variance to decrease with n
+
+Under the Gauss-Markov assumptions 1-5:
+(i) ˆβj is asymptotically normally distributed,
+(ii) ˆσ2 is a consistent estimator of σ2 = Var (u)
+(iii) For each j: (βj^-Bj)/se(B^j) ~Normal(0,1) where se(B^j) OLS se
+se(B^j) ~ O(1/sqrroot(n)), se(Bj,n2)/se(Bj,n1) ~= sqrroot(n1/n2)
+Under Gauss-Markov assumptions MLRM1-5,
+the OLS estimators have the smallest asymptotic variance among
+the set of consistent estimators
+reject null if F>F(q,n-k-1)a or p-val=Ftail(q,n-k-1,F)<a
+
+
+
+

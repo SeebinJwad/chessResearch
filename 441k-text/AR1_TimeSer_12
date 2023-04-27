@@ -1,0 +1,16 @@
+ASSUMPT: no serial/auto corr: corr(ut,us)=0 for t not =s, nothing said abt corr among indep vars
+impact prop sigma0, short run elasticity
+LRP sigma0+... long run elasticity
+dummy vars can be used for breaks and periods, dt = {0 for t<t* and 1 for t>=t*}
+need to incorporate time trends to avoid spurious reg
+y(t=B0+B1x(t1+B2x(t2,R^2 high bc of trending behavior
+many process depend on time series to be weakly stationary: ut=u for all t and sigma^2t=sigma^2 for all t, and y t,s = y |t-s|
+MA(1) PROCESS:
+yt=ut+aut-1 ut are iid(0,sigma^2)
+recall yt=a0+a1t+ut, NOT stationary because E(yt)=a0+a1t, weakly dependent though
+
+AR(1) PROCESS:
+nonstationary: yt=B0+y(t-1 + u(t, variance changes with time
+to simplify assume y0=0 and B0=0, yt=y(t-1+u(t, pure random walk
+ random walk is said to be without drift, while if δ ≠ 0,
+if we have random walk w or wo drift, then results of law of large num and clt dont apply, if B1 < 1 effect of shock dies out, if B1=1 effect of shock permanent

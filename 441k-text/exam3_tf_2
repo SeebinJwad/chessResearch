@@ -1,0 +1,45 @@
+T If I pool independent cross-sections across time then it is reasonable to
+assume the residuals are uncorrelated across time.
+2. F For a random walk with a positive drift the best forecast of future values is
+always equal to the most recent value.
+3. T A variable that follows an MA(1) process is stationary and weakly
+dependent.
+4. F If a regressor is correlated with the residual in a regression model due to
+omitted variables then one should use a proxy for the omitted variable as
+an instrument to obtain consistent estimates.
+5. T With panel data one can remove the individual specific component of the
+residual by taking first differences across time of the dependent variable
+and regressors.
+6. F In the linear probability model the fitted values lie in between 0 and 1.
+7. T In the probit model the sign of the estimated coefficient on a regressor
+indicates the direction of the effect of that variable on the probability that
+the dependent variable is 1.
+8. F In the linear probability model the inherent heteroskedasticity in the
+residual implies that OLS estimates will be biased.
+9. T If y and x have linear time trends then the regression of y on x should also
+include time as a regressor to avoid the spurious regression problem.
+10. T In a panel data model if the individual specific component of the residual
+is correlated with the regressor then pooled OLS will be unbiased
+
+T If I pool independent cross-sections across time then it is reasonable to
+assume the residuals are uncorrelated across time.
+2. F For a random walk with a positive drift the best forecast of future values is
+always equal to the most recent value.
+3. T A variable that follows an MA(1) process is stationary and weakly
+dependent.
+4. F If a regressor is correlated with the residual in a regression model due to
+omitted variables then one should use a proxy for the omitted variable as
+an instrument to obtain consistent estimates.
+5. T With panel data one can remove the individual specific component of the
+residual by taking first differences across time of the dependent variable
+and regressors.
+6. F In the linear probability model the fitted values lie in between 0 and 1.
+7. T In the probit model the sign of the estimated coefficient on a regressor
+indicates the direction of the effect of that variable on the probability that
+the dependent variable is 1.
+8. F In the linear probability model the inherent heteroskedasticity in the
+residual implies that OLS estimates will be biased.
+9. T If y and x have linear time trends then the regression of y on x should also
+include time as a regressor to avoid the spurious regression problem.
+10. F In a panel data model if the individual specific component of the residual
+is correlated with the regressor then pooled OLS will be unbiased

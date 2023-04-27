@@ -1,0 +1,36 @@
+Using this regression and the previous one test the hypothesis (using a 5%
+significance level) that age does not matter for sleep. Be sure to write down the
+appropriate hypotheses (null and alternative) and construct the appropriate test statistic
+for testing the null hypothesis.
+H0: b_age =b_agesq =0
+H1: H0 false
+2 points for hypotheses
+F=(SSRR - SSRU)/2/( SSRU /(n-k-1)) = (122631662-122147777)/2/(122147777/(706-5-1))
+= 1.39 < F(2,700) = 3.00
+1 point for F stat formula and 1 point for correct test stat and conclusion.
+Therefore do not reject the null. If they used t tests then take of 2 points.
+
+What is the effect of having young kids if the person is female?
+-88.76846 (coeff yngkid)
+What is the effect of having young kids if the person is a male?
+-88.76846 + 128.0439 = 39.28 (add maleyng and yngkid coeffs)
+
+n this model how does one interpret the coefficients on age and agesq?
+The effect of age is given by -8.69 +2(0.128)(age) – the effect of age is initially negative but
+becomes less negative as age increases – this is a U shaped relationship.
+
+Using one sentence for each, interpret the estimated coefficients on the
+variables totwrk, educ and male.
+An increase in totwrk of 1 minute is predicted to decrease sleep by 0.163 minutes holding
+fixed educ, age and sex.
+An increase in education of 1 year is predicted to decrease sleep by 11.7 minutes holding
+fixed .....
+Men sleep 87.7 minutes more than women holding fixed work, educ and and age
+2 for each – take points off for neglecting the ``holding fixed’’ part.
+
+omeone points out that there may be unobserved factors that affect both sleep
+and work. Would this lead you to suspect that one of the assumptions (MLRM.1-6) is
+violated? If so, which one and why is it possibly violated.
+Assumption 4. If the unobserved factor affects sleep then it is in u – if this also affects work
+then u will be correlated with totwrk violating the ZCM assumption. Use your judgment for
+partial credit.

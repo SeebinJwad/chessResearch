@@ -1,0 +1,21 @@
+MLRintro_2
+Including Irrelevant Variables - You added variable that has a zero population coefficient.
+Omitting Relevant Variables-You left out a variable that has a non-zero population coefficient
+Long: y = β0 + β1x1 + β2x2 + u
+Short: y = β0 + β1x1 + uS
+E (uL | x1, x2 ) = 0 : ZCM
+ZCM is also valid for Short since β2 = 0 implies uS = uL
+V (  ̃β1 ) < V ( ˆβ1 )
+Two cases ommited variable bias=0:
+β2 = 0,
+ ̃δ = 0, ie: x1 and x2 are uncorrelated
+Corr(x1, x2 ) > 0 Corr(x1, x2 ) < 0
+β2 > 0 positive bias negative bias
+β2 < 0 negative bias positive bias
+
+
+
+
+
+
+

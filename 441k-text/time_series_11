@@ -1,0 +1,29 @@
+stochastic or time ser process, temporal ordering, past affect fut
+static model relating y to z:
+yt=B0+B1zt+ut
+finite dist lag models:
+gfr(t = a0 + sigma0 pe(t + sigma1*pe(t-1 +..(t-2+ut
+gfr (t is gen fertility rate and pe(t personal tax exempt at time t
+this model recognises that the decision to have children may not
+immediately change when pet changes(may be lagged response)
+to interpret cetpar effect z on y, define 2 multipliers:
+impact propensity/multiplier is sigma 0 (immediate impact of one unit inc in z at time t on y)
+long run prop/mult sigma0+1+2.. (long run change in y due to permanent one unit inc in z)
+we can do f-test to see if z has lagged effect ony, fdl contains the static model as special case
+often corr in z at diff lags, multicollin(large se) can be diff to get precise estimate of sigma j. but good estimate lrp, we can add more vars to fdl
+ZCM: for each t, error ut ut|X = 0, uncorr w each explanatory var in every time period, feedback y into future x then violated, if not then contemp exogenous (ut x uncorr), if corr(ut,xsj) uncorr when s not t, strictly exog, need stronger assumption for ols unbias
+EXAMPLE TIME SERIES: Static Phillips Curve.
+int = β0 + β1unempt + ut (3)
+where int is the ináation rate
+unempt is the unemployment rate
+People used to think there was a tradeoff between inflation and
+unemployment
+Then the 70's happened and thought changed - macroeconomics changed
+EXAMPLE TIME SERIES:
+Explaining the Murder Rate.
+mrdrtet = β0 + β1convrtet + β2unempt + β3yngmlet + ut (3)
+where mrdrtet is the no. of murders per 10,000 people during year t,
+convrtet is the murder conviction rate,
+unempt is the unemployment rate and
+yngmlet is the fraction of the population who are males aged 18-25 years
+= can include many independent variables

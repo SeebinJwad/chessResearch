@@ -1,0 +1,55 @@
+T If the p-value associated with a null hypothesis is 0.12 then I would not
+reject the null hypothesis at the 10% level.
+2. T A 95% (two sided) confidence interval for a regression parameter
+(coefficient) is wider than a 90% confidence interval.
+3. F The null hypothesis H0: 1 +22 = 3 has the same number of restrictions
+as the null hypothesis H0: 1 =22 = 3
+4. F If a regression of y on x yields an insignificant slope estimate (at a 5%
+level) on x, it must be the case that a regression of y on x and x2 would
+yield insignificant slope estimates (at a 5% level) on both x and x 2 .
+5. T If a 95% two sided confidence interval for a coefficient contains the value
+0.5 then if I would not reject the null hypothesis that the coefficient equals
+0.5 (against a two sided alternative that it does not) using a 5%
+significance level test.
+6. T In a regression model with an intercept, to account for a categorical
+regressor that takes on 3 possible (non-ordered) values I should include
+only 2 dummy variables (ie dummies for two of the categories only).
+7. F It two regressors are correlated with each other then I should include the
+interaction of the two in the model.
+8. F If two coefficients are individually insignificant (at say the 5% level) they
+will also be jointly insignificant.
+9. T In a simple linear regression model (ie an intercept and one regressor) with
+n=12 observations if the R-squared is 0.5 then the slope coefficient is
+statistically significant at the 5% level.
+10. F To choose between a model using y as the dependent variable and another
+that uses log(y) as the dependent variable I should just pick the model with
+the higher R-squared.
+
+T If the p-value associated with a null hypothesis is 0.02 then I would reject
+the null hypothesis at the 10% level.
+2. F If a 95% (two sided) confidence interval for a parameter contains the value
+0 then a 90% confidence interval will also contain the value 0.
+3. F The null hypothesis H0: 1 =2 has the same number of restrictions as the
+null hypothesis H0 : 1 =2 =2
+4. F Regression to the mean implies the following: a student who was well
+above average on midterm 1 will be predicted to be below average on
+midterm 2 (assume that scores on midterm 1 and 2 are positively but not
+perfectly correlated).
+5. T If a 95% two sided confidence interval for a coefficient contains the value
+0.5 then if I would not reject the null hypothesis that the coefficient equals
+0.5 (against a two sided alternative that it does not) using a 1%
+significance level test.
+6. T If a qualitative variable takes on g values then I only need g-1 dummy
+variables to account for this variable as long as I include an intercept in the
+model.
+7. T Adding the square of a single dummy variable makes sense will result in a
+model with perfect multicollinearity.
+8. F If two coefficients are individually significant (at say the 5% level) then
+the coefficient on the interaction will also be significant if I add it to the
+model.
+9. T In a simple linear regression (ie an intercept and one regressor) with at
+least 12 observations if the R-squared is above 0.5 then the slope
+coefficient is statistically significant at the 5% level.
+10. F The exponential function of predicted values from a regression of log(y)
+on x will be unbiased predicted values for the level of y.
+

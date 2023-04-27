@@ -1,0 +1,24 @@
+To estimate the model we would run OLS on the following equation:
+log(wage) = β0 + δ0 female + β1 educ + δ1 female.educ + u
+where female . educ is the interaction term obtained by simply
+multiplying female and educ together
+
+wage example,
+wage = β0 + β1educ + β2exper + u
+and the two groups are Males and Females. In this model we are
+assuming that there is no difference between the model for females
+and males
+We can test whether this is valid by estimating,
+wage = β0 + β1educ + β2exper+δ0female + δ1female*educ + δ2female*exper + u
+and testing the hypothesis that
+H0 : δ0 = 0, δ1 = 0, δ2 = 0
+against the alternative that one of the coefficients is zero
+Just do an F test ñ sometimes called a Chow test
+
+Then for t-tests you just proceed as usual but instead use the robust
+standard errors
+For tests involving more than one coe¢ cient one needs the full robust
+variance covariance matrix which in matrix notation looks like,
+(X'X)^-1 X'SX(X'X)^-1 where S is a matrix that is zero everywhere except that the diagonals
+are ˆui2
+t=estimate-hypothesized value ) / robust se

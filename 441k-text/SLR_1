@@ -1,0 +1,25 @@
+SLRM-INTRO
+B0=y-B1^x, B1=Cov(xi,yi)/Var(xi), r=Cov(xi,yi)/sd(xi)*sd(yi)
+sum of OLS residuals=0 Ei ui=0, sample covariance bw x and u =0 Eixiui^=0
+point x,y means always on the OLS regression line
+SST=SSE+SSR
+R^2 = SSE/SST 
+R^2= 1-(SSR/SST)
+X * c OLS slope estimate 1/c
+Y * c OLS slope and intercept * c
+R2 does not change when we change the units of measurement
+Variance of random var X is given by E((X-u)^2) where u=E(X)
+o^2 = 1/(n-2) Ei ui^2 = SSR/(n-2)
+E (u | x1, x2 ) = 0
+variables can be correlated but not functionally related
+age = β0 + β1exper + β2exper2 + u
+Partial effect of exper: β1 + 2β2exper
+y = β0 + β1x1 + β2x2 +.... + βk xk + u 
+k independent variables plus intercept
+k + 1 (unknown) population parameters
+almost always will be u.
+β1 = ˆβ1 +  ̃δ12 ˆβ2
+  ̃δ12 is the regression coefficient from regression of x2 on x1
+
+
+

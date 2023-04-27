@@ -1,0 +1,26 @@
+
+Quadratics:
+y = β0 + β1x1 + β2x21 + β3x2 + ....+u
+Partial effect x1 is B1+2B2x1
+Case 1: ˆβ1 > 0 and ˆβ2 < 0 
+Turning point highest, effect neg B1^+2B^2x1=0, value x1 is x1*=-B^1/2B^2 > 0 which pos since B^2 < 0
+Case 2: ˆβ1 < 0 and ˆβ2 > 0, turning point lowest, positive B1+2B2x1=0, x1*=-B^1/2B^2 positive since B1^ < 0
+
+Case 3: ˆβ1 > 0 and ˆβ2 > 0, flat spot exponential (negative since) x1* = -B^1/2B^2 < 0, turning point doesn’t exist
+
+Standard error quadratic
+V ( ˆβ1 + 2 ˆβ2x1 ) = V ( ˆβ1 ) + 4x2
+1 V ( ˆβ2 ) + 4x1Cov ( ˆβ1, ˆβ2 )
+
+ partial effect of bdrms on price:
+ChangePrice=(B2+B3sqrft)Changebdrms
+Partial effect sqrft on price:
+ChangePrice=(B1+B3bdrms)ChangeSqrf
+we do not also include a dummy variable, say called male, which is
+1 for males and 0 for females. There are only 2 groups, and we only need
+2 different intercepts (so in addition to β0 we only need one dummy
+variable).
+Including both female and male (and having an intercept) would lead to
+MLRM3 being violated
+female + male = 1
+

@@ -1,0 +1,17 @@
+pooled cross sect- indep cross sect at diff times
+panel data- same cross sect across time
+DIFF IN DIFF
+diff-in-diff, better estimate of policy is change in price diff is effect of policy
+rprice=B0+B1nearinc+B2 1981 + sigma nearinc * 1981+u
+sigma will capture difference in effect of nearinc in 1981 compared to 1978
+natural experiment - policy affecting one group (treatment) but not control
+PANEL DATA
+It is possible to use panel just like pooled cross-sections, but in general we shouldnt need to: take into account corr in unobservables across time for each unit
+panel data can be used to address some omit var bias, if omit vars are constant, they form part of composite error term
+yt = B0+sigma 0 d2t + B1 xt + ai + ut t=1,2, uit time varying error
+ai captures all unobserved time constant factors
+ai called a fixed effect or indiv heterogen or unobs heterogen
+pooled ols fine if zcm or mlr4 is satisfied
+if ai eliminated-ols strict exogeneity
+with T>2, take avg across time, y= 1/T(B0...
+

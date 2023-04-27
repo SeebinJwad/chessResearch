@@ -1,0 +1,41 @@
+This section uses data on Texas non-agricultural employment (txnag) and (rest of US) non-
+agricultural employment (usnag) which is quarterly over the period 1974Q1 to 1988Q1 – ie 57
+quarterly observations. Here are time series plots of these variables followed by a couple of
+AR(1) regressions:
+For each variables (ie txnag and usnag) discuss whether you think the variable
+is stationary or not. Indicate what aspect of the output lead you to that conclusion.
+Both trend upwards based on the graphs (2 points)
+If say that the AR(1) coefficients are close to 1 so RW so therefore not stationary then that’s
+worth 2 points or if they try and do t tests of b1=1 correctly then give 2 points --- they did not
+have tables so could not do formal test
+
+In view of your answer indicate whether or not you trust these results as
+confirming a close ``causal’’ relationship between employment in Texas and elsewhere:
+(circle one)
+Do not Trust
+
+It was decided that the variables should be differenced so that now ctxnag and cusnag contain
+the changes in the variables (ie the change in employment relative to the previous quarter. An
+AR(1) model for cusnag was estimated as follows:
+
+cusnag coeff std err.
+cusnag_1 | .7703361 .0887719 
+_cons | 120.5466 66.00597 
+
+Using this model forecast the value for usnag (ie not cusnag) for 1988Q2 and
+1988Q3 using the fact that in 1988Q1 usnag=6545.12 and cusnag=987
+Cusnag1988Q2 = 120.54 + 0.7703*987 =880.87 so usnag1988Q2=6545.12+880.87 =7426 (_cons+cusnag_1*987) + 6545.12
+Cusnag1988Q3=120.54+0.7703*880.87 =799.11 so usnag1988Q3=7426+799.11 =8245.11 (_cons+cusnag_1*880.7) + 7426
+
+
+Here is a regression of changes in txnag on usnag
+What do you conclude about the relationship between changes in employment
+based on this regression?
+There is a significant positive association between changes employment in Texas and
+changes elsewhere in the US – take off 1 if did not say changes and another 1 if did not say
+stat. sig.
+
+Assuming the residuals are homoskedastic which one of the following issues
+might lead you to suspect that the standard errors are invalid:
+Serial Correlation
+

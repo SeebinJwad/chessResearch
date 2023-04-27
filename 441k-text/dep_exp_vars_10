@@ -1,0 +1,26 @@
+DEPENDENT VARIABLE:
+Suppose that we would actually like to run,
+y*= β0+β1x1+u but instead of y* we have its noisy measure y=y*+e, e measurement error
+relationship between y and x is y=B0+B1x1+u+e
+This will be a valid regression if ZCM is satisÖed which requires x1 be
+uncorrelated with both u and e
+As long as the measurement error is not correlated with the regressor
+we are in good shape
+Note that variance of the actual residual will be larger than in the
+ideal regression,
+Var (u + e) = Var (u) + Var (e)
+assuming no covariance between u and e
+
+EXPLANATORY VARIABLE:
+Nopw suppose that the regressor (or independent variable) is mismeasured
+Ideal regression, y = β0 + β1x*+u, but we see x1=x1*+e
+Classic EIV assumption is that e is uncorrelated with xi*
+Observed regression,
+y = β0 + β1x1 + (u -B1e) Get violation of ZCM since x1 is correlated with actual residual:
+u=B1e because x1 is correlated with e
+
+attenuation bias in model coefficients caused by measurement error or noise in your independent (X) variables. Your model coefficients become biased towards 0.
+
+Summary: Check your data for outliers ñ could indicate a problem in the data
+Proxies for unobserved variables
+Classical EIV and attenuation bias

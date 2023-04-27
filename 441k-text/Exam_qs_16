@@ -1,0 +1,35 @@
+1)Using the information provided find an expression for the F test statistic for
+testing the overall goodness of fit of the regression and write down an appropriate
+decision rule for the test such that the size (significance level) of the test is guaranteed to
+be no larger than 5%.
+F=((SST-SSR)/2)/(SSR/47)=((652.345-446.825)/2)/(446.825/47)
+Reject null that both slopes are zero if F>F(2,47)= 3.15 (or a number between 3.15 and
+3.23)
+
+2)Suppose I wanted to test the hypothesis that fheight and mheight have the same
+population slope coefficients. Write down formally the null hypothesis and indicate how
+you would conduct a t-test of this hypothesis. (Note: You have all the information needed
+to do this so write down the appropriate calculations that you would do to find the t
+statistic and write down an appropriate decision rule with a significance level no larger
+than 5%).
+H0: fheight=mheight (meaning the coefficients of these variables – could be
+b_mheight=b_fheight
+Reject H0 if t>t(47)_0.05 =2.00 (or number between 2.00 and 2.021)
+T=(b_fheight-b_mheight)/(se(b_fheight-b_mheight))
+B_fheight-b_mheight = 0.4819863-0.3723857
+s.e. = sqrt(variance(b_fheight-b_mheight))
+variance(b_fheight-b_mheight)=0.02042403+0.03869-2(-0.00937191)
+
+
+3) How would you do an F test of the hypothesis in 2. In doing this write down
+how you would get the SSR (or R squared) for the restricted model and how you would
+find the F statistic and write down an appropriate decision rule with significance level no
+larger than 5%.
+Restricted model would be height = b0 + b1(fheight+mheight) + u
+Impose that that b1=b2 on the unrestricted model.
+F is the usual F formula in terms of SSR or R squared and reject if F>F(1,47)_0.05 so if
+use the F(1,60)_0.05 = 4.00 you would guarantee the size is no larger than 0.05.
+
+
+
+

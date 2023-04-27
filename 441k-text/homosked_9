@@ -1,0 +1,13 @@
+
+Heteroskedasticity makes usual standard errors invalid
+OLS is not biased as a result of hetero It may be ine¢ cient but improving efficiency is hard
+Homoskedastic regression means use standardized residuals at 95% (-2,2)
+If E (xu) 6 = 0 then ZCM violatedand we have an endogenous regressor or and endogeneity problem
+
+NEED TO KNOW: PROXY VARIABLE SOLUTION 
+
+Note that the Proxy solution is used when we are interested in the
+effect of a variable (educ) while using a proxy for a di§erent variable
+that we wanted to control for (ability) but for which we did not have
+a proper measure
+Fundamentally di§erent from Errors in Variables 

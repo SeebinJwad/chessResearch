@@ -1,0 +1,57 @@
+This example considers the linear probability model to explain whether or not a high school
+graduate decided to attend college (either a 2 year or 4 year college). Here are the descriptions of
+the variables used.
+grades average grade on 13 point scale with 1 = highest
+
+female = 1 if female
+asian = 1 if asian
+hispan = 1 if hispan
+black = 1 if black
+college = 1 if chose to attend college
+
+Using the output provided so far find the sample proportion that attended
+college for the following groups:
+a. All racial categories combined:
+0.790194 (Mean very bottom summary statistics next to college)
+b. Whites: (ie not asian, Hispanic or black)
+0.7836 (cons_ coef)
+c. Hispanics:
+0.7836+0.0157 (_cons+coeff hispan)
+d. Asians:
+0.7836+0.1086 (_cons+coeff asian)
+e. Blacks:
+0.7836-0.04426 (_cons+coeff - black bc black neg)
+
+Is race a significant determinant of college attendance? Justify your answer
+with an appropriate hypothesis test(s).
+The overall goodness of fit test (F test) has a p-value of 0.0000 suggesting the race dummies
+are jointly significant. (Full Credit) Take off 1 point if just looked at individual coefficients
+(correctly noting Asian is significant at 1% and black is sig. at 5% but Hispanic is not)
+
+
+In one sentence explain why the robust command was used.
+To deal with heteroskedasticity in the LPM
+
+What is the interpretation of the coefficient on grades?
+A decrease in grades of 1 unit (an improvement) increases prob of college by 0.0716 or
+7.16% (or vice versa) holding fixed race – take off a point if they did not say conditional on
+race (coeff of grades)
+
+Find the predicted probability of choosing to attend college for a white person
+with the highest possible grades (ie grades = 1).
+Phat = 1.23533 -0.0716= 1.637 >1 (_cons + (negative) coeff of grades)
+
+If one instead used a probit model the predicted value for the person in the
+previous question would be (circle one):
+i) Lower
+
+Note the change in the coefficient on black. Provide an interpretation for the
+black coefficient in the last regression and comparing it to the interpretation in the first
+regression explain why the coefficient has changed so much.
+Holding fixed grades a black is more likely to attend college than a white person. (Full
+credit) In the earlier regression we did not control for grades so overall blacks are less likely
+to attend college and they are likely to have lower grades so the coefficient in the first case is
+much more negative.
+
+
+

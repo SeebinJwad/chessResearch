@@ -1,0 +1,24 @@
+TTEST
+u ~ Normal (0, σ2 ) implies 4 ZCM & 5 homoskedasticity
+CLM: y|x ~ Normal (β0 + β1x1 + .... + βk xk, o^2) 
+βj ~ Normal (βj , Var ( ˆβj ))
+Var ( ˆβj ) = σ2 / (SSTj (1-Rj^2)
+( Bj^ - Bj ) / sd(B^j) ~Normal (0,1)
+( Bj^ - Bj ) / se(B^j)~ tn-k-1
+ null hypothesis: H0: Bj=0
+β2 > 0 then experience has a positive (partial) effect on wages
+t(Bj) = B^j / s.e.(B^j)
+Type I error - reject a true null
+Power-chance of rejecting H0 when false
+P(tˆβj> cα | H0 ) = α
+Two sided: H0 : βj = 0, H1 : βj  =/= 0
+H0: Bj=1. t=(Bj^-a)/s.e.(B^j)
+Single linear combination params:
+H0: B1=B2, H1: B1 =/= B2
+t=(B^1-B^2)/s.e.(B^1-B^2)
+se(B^1-B^2) does not = se(B^1)-se(B^2)
+95% of the possible random samples have would have βj within [_βj , βj_]
+CI test: H0 : βj = a ,HA:βj=/= a, .05→.025 
+[Bj-s.e.(Bj)tn-k-1,.025, Bj+se(Bj)tn-k-1,.25
+
+

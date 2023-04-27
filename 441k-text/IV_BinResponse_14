@@ -1,0 +1,24 @@
+lin prob model - use multiple regression explain qual outcome
+y not normal, bernoulli(p) y ~ bern(p) mean:
+p(y=1)=p, p(y=0)=1-p, ie flip-y=1 if heads p=1/2
+y~Bernoulli(p), E(y)=p, V(y)=p(1-p)
+linprob model - E(Y | x1..xk) = P(y=1 | x1,..,xk)=
+=y = B0+B1x1..Bkxk+u where E(u|x1..xk)=0, OLS not best estimate,WLS
+Bj measures change in prob of success when xj change one unit, cetpar
+lnLF=.586+.038educ-.016age+other factors
+lnLF=1 is woman in labor, if educ inc by 10, prob of labor inc by .038*10=.38, large
+probit model, sign Bj determine direction of change, value is theta(B0..Bkxk),non-dummy vars only
+OMMITED VARS:
+instrumental var soln to ommited vars:
+log(wage)=B0+B1educ+u
+what if no proxy? find z (IV) that satisfies:
+cov(z,u)=0, cov(z,educ)=/=0, get consistent estimate B1
+crucial cov(z,educ) not 0, thus educ=pi 0 + pi 1 *z+v, test pi 1 = 0 
+proxy not an instrument!
+Estimating 'causal' effect skip class on score
+score=B0+B1skipped=u, if more interested students skip less classes and do bettter, skipped corr with u
+1) must be corr w num skipped classes ie explain skipped
+2) be uncorr with other unobs factors affecting score
+when one has more thna one instrument for y2, one can tests maintained assumption zk+1..,zk+I are actually uncorr w u, overidentifying restriction
+hausman test whether y2 is actually corr w u
+

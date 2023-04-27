@@ -1,0 +1,50 @@
+In a model for a qualitative dependent variable it does NOT matter, in terms of interpretation, whether I code for the variable 0 for no and 1 for yes or the other way around.
+True
+
+
+One obtains more precise estimates when using a panel data set consisting of T=2 observations on n individuals as opposed to a single cross-section of the same n individuals because there is twice as much data.
+False
+Forecasts of future values from a stationary AR(1) model will converge to the mean of the process the further ahead that one forecasts.
+True
+In the linear probability model there is a violation of the Zero Conditional Mean Assumption because the residual is heteroskedastic whenever there are regressors in the model
+False
+The random walk without drift is stationary because there is no linear trend in the mean of the process
+False
+Taking logarithms of a variable will always make the variable be stationary and weakly dependent
+False
+Pooled cross section data (i.e., independent cross sections draw at different points in time) can be used in order to solve the "unobserved heterogeneity" (or the "omitted variable bias") problem
+False
+
+Fitted values from the linear probability model will be between 0 and 1
+True
+Suppose one is interested in the simple linear regression of y on x in which x is endogenous (correlated with the residual). A variable z will be a good instrument for x if it is correlated with y.
+False
+Why is it a good idea to use the robust command
+The linear probability model has heteroskedastic residuals when there are regressors with non-zero coefficients.
+
+When we have the AR(1) process with β1=1 then we have what is called a
+random walk with drift (when β1 can also just be very close to 1) if random walk then not stationary
+In AR(1) when absolute value of β1 is β1<1 we call this
+weak dependence
+in a probit model, probability is restricted from
+(0,1)
+Pooling independent cross-sections across time will allow one to deal with correlation between the individual specific part of the residual and regressors.
+False
+For a random walk without drift the best forecast of future values is always equal to the most recent value.
+True
+
+A random walk with nonzero drift is a weakly dependent process.
+False
+The assumptions MLR.1-MLR.6 are more plausible with time series data as opposed to cross section data because the R squared is usually higher with time series data
+False
+With panel data it is implausible to assume that MLR.2 is satisfied
+True
+Serial correlation in a time series regression makes the usual standard errors invalid.
+True
+
+In the Logit Model for qualitative responses, the fitted values will lie between 0 and 1.
+True
+If y and x are trending time series then taking the natural logarithm will remove the trends.
+False
+In a panel data model if both components of the residual (ie. ai and uit) are uncorrelated with the regressors then pooled least squares will be unbiased.
+True

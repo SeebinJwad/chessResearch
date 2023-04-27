@@ -1,0 +1,51 @@
+
+T If the p-value associated with a null hypothesis is 0.012 then I would not
+reject the null hypothesis at the 1% level.
+2. F A 95% (two sided) confidence interval for a regression parameter
+(coefficient) is wider than a 99% confidence interval.
+3. T The null hypothesis H0: 1 +22 = 3 has the same number of restrictions
+as the null hypothesis H0: 1 =22
+4. F If a regression of y on x yields an insignificant slope estimate (at a 5%
+level) on x, it must be the case that a regression of y on x and x2 would
+yield insignificant slope estimates (at a 5% level) on both x and x 2 .
+5. T If a 95% two sided confidence interval for a coefficient does not contain
+the value 0.5 then I would reject the null hypothesis that the coefficient
+equals 0.5 (against a two sided alternative that it does not) using a 10%
+significance level test.
+6. F In a regression model with an intercept, to account for a categorical
+regressor that takes on 2 possible (non-ordered) values I should also
+include the 2 dummy variables (ie dummies for each category).
+7. F It there is a violation of MLRM5 OLS will be biased and inconsistent.
+8. F If two coefficients are individually insignificant (at say the 5% level) they
+will also be jointly insignificant.
+9. F In a linear regression model with k=4 regressors and an intercept with n
+larger than 125 if the R-squared is 0.05 then the slopes will be jointly
+significant statistically significant at the 5% leve
+
+F If the p-value associated with a null hypothesis is 0.012 then I would
+reject the null hypothesis at the 1% level.
+2. T A 95% (two sided) confidence interval for a regression parameter
+(coefficient) is shorter than a 99% confidence interval.
+3. F The null hypothesis H0: 1=22 = 3 has the same number of restrictions
+as the null hypothesis H0: 1=22 = 3=4
+4. F If a regression of y on x yields an insignificant slope estimate (at a 5%
+level) on x, it must be the case that a regression of y on x and x2 would
+yield insignificant slope estimates (at a 5% level) on both x and x2.
+5. T If I do not reject a null hypothesis that a coefficient is equal to a number c
+against the two sided alternative that the coefficient is not equal to c at the
+10% level then c must be in the 99% (two sided) confidence interval.
+6. T In a regression model with an intercept, to account for two separate
+dummy variables it is completely general (ie not imposing any
+restrictions) to include both dummy variables along with the interaction
+between them.
+7. F It two regressors are correlated with each other then I should include the
+interaction of the two in the model.
+8. T If assumption MLRM.5 is violated then the usual formula for the F test (in
+terns if SSR for the restricted and unrestricted models) will be invalid.
+9. T In a simple linear regression model (ie an intercept and one regressor) with
+n=102 observations if the R-squared is less than 0.01 then the slope
+coefficient is not statistically significant at the 5% level.
+10. T In comparing a model which uses y as the dependent variable and x as the
+explanatory variable and another that uses y as the dependent variable and
+log(x) as the explanatory variable it is ok to use the R-squareds for the two
+models

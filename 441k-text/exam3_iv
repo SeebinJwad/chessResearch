@@ -1,0 +1,31 @@
+n class we considered the estimation of a demand equation for fish. The specification to be
+used is in the simple linear regression form,
+lquant = b0 +b1*lprice + u
+1. (3 points) What would be interpretation of the coefficient on lprice (ie the slope
+coefficient)?
+
+Own price elasticity of demand for fish
+Below is the simple linear regression of log quantity on log price using the daily data from
+the Fulton fish market. The demand
+regress lquan lprice
+Why does the least squares regression procedure give biased and inconsistent
+estimates in this case?
+The ZCM (ass. 3) is violated because shocks to demand will affect the price of fish – so u is
+correlated with lprice – or if mentioned simultaneity
+
+A variable in the data that affects supply but not demand is stormy which is a dummy variable
+for whether or not the weather at sea (where fish are caught) is stormy or not. Here are two
+regression involving this variable:
+regress lquan stormy
+regress lprice stormy
+
+Using these estimates discuss whether or not stormy can serve as an instrument
+for lprice in the estimation of the demand equation.
+It is significant in the second OLS of lprice on stormy – p value is 0.0000 so it is strongly
+positively related with lprice as needed (full credit). 2 bonus points if they also said stormy at
+sea should not affect demand on shore – ie it’s valid
+
+Using information provided (and your cheat sheet) find the instrumental
+variable estimate of the coefficient on lprice and interpret this estimate
+B1hat = -0.362891/0.3352623 = (about -1) = -1.08 (stormy lquan coeff / stormy lprice coeff)
+
