@@ -119,6 +119,7 @@ se(B^j) ~ O(1/sqrroot(n)), se(Bj,n2)/se(Bj,n1) ~= sqrroot(n1/n2)
 Under Gauss-Markov assumptions MLRM1-5,
 the OLS estimators have the smallest asymptotic variance among
 the set of consistent estimators
+reject null if F>F(q,n-k-1)a or p-val=Ftail(q,n-k-1,F)<a
 
 Quadratics:
 y = β0 + β1x1 + β2x21 + β3x2 + ....+u
